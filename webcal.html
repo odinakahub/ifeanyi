@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{
+            font-family: tahoma;
+            color: firebrick;
+            
+        }
+        .webinto{
+            display: flex;
+            margin-bottom: 0px;
+        }
+        img{
+            height: 100px;
+            padding-bottom: 0px;
+        }
+        a{
+            text-decoration: none;
+            color:purple;
+            cursor: pointer;
+            font-family: tahoma;
+        }
+        .web-bar{
+            display: flex;
+            border: none;
+            background-color:yellow ;
+            border: none;
+            justify-content: space-between;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image:url("");
+        }
+        li{
+            display: flex;
+            margin-right: 10px;
+            
+        }
+        ul{
+            display: flex;
+            
+        }table,tr,td{
+            border:solid;
+        }
+        table{
+            background-color: rgb(122, 160, 55);
+        }
+        tr{
+            background-color: rgb(222, 238, 5);
+        }
+        .zero{
+            text-align: right;
+            border-radius: 1px;
+            padding-bottom: 20px;
+            border: 5px;<
+         }
+        .numbers{
+            text-align: center;
+        }
+        
+        .calc-name{
+            border-radius: 5px;
+            font-family: tahoma;
+            
+        }
+        table{
+            height: 250px;
+        }
+        p{
+            font-size: medium;
+        }
+        .webbody{
+            display: flex;
+        }
+
+
+    </style>
+    <head>
+        <link rel="icon" type="image/png" href="logo.png">
+        <title>MY WEB CALCULATOR</title>
+    </head>
+    <body>
+        <div>
+            <div class="web-bar">
+                <div class="webinto">
+                    <img src="webLoGo.jpg" alt="logo">
+                    <h1>RHEMA CONCEPT ICT</h1>
+                </div>
+                <div class="webmenu">
+                    <ul>
+                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="">ORDER</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="webbody">
+                <h1>USING ICT TABLE CALCULATORS</h1>
+                
+
+                <table>
+                    <tr>
+                        <td colspan="4" class="calc-name">CASIO CALCULATOR</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="zero"><input id="displaycontent" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="numbers" onclick="showValue(9)">9</td>
+                        <td class="numbers" onclick="showValue(8)">8</td>
+                        <td class="numbers" onclick="showValue(7)">7</td>
+                        <td class="numbers" onclick="showValue('/')">&divide</td>
+                    </tr>
+                    <tr>
+                        <td class="numbers" onclick="showValue(4)">4</td>
+                        <td class="numbers" onclick="showValue(5)">5</td>
+                        <td class="numbers" onclick="showValue(6)">6</td>
+                        <td class="numbers" onclick="showValue('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td class="numbers" onclick="showValue(3)">3</td>
+                        <td class="numbers" onclick="showValue(2)">2</td>
+                        <td class="numbers" onclick="showValue(1)">1</td>
+                        <td class="numbers" onclick="showValue('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td class="numbers" onclick="calcValue()">=</td>
+                        <td class="numbers" onclick="clearValue()">C</td>
+                        <td class="numbers" onclick="showValue('*')">&#215</td>
+                        <td class="numbers" onclick="showValue(0)">0</td>
+                    </tr>
+                </table>
+                
+                <script>
+                    function showValue(x){
+                        displaycontent.value   += (x);
+                    }
+                    function calcValue(){
+                        displaycontent.value  = eval(displaycontent.value);
+                    }
+                    function clearValue(){
+                        displaycontent.value  = "";
+                    }
+                </script>
+                
+                </div>
+            
+        </div>
+    </body>
+</html>
