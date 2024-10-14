@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 360px;
+    height: 100%;
+
+    background-color: rgb(231, 225, 225);
+    
+    
+}
+.textpart{
+    margin-bottom: 5px;
+    cursor: context-menu;
+
+}
+.textpart:hover{
+    background-color: whitesmoke;
+}
+
+.vlcheader{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+
+}
+.leftvlcheader{
+    display: flex;
+    align-items: center;
+   
+    
+}
+.vlclogo{
+    height: 35px;
+    
+}
+h1{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+.rightvlcheader{
+    display: flex;
+}
+.firstul{
+    display: flex;
+}
+li{
+    list-style:none ;
+}
+
+.toprightvlclogos{
+    height: 35px;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+.vlcmenubar{
+    display: flex;
+    margin-left: 6px;
+}
+.menubar{
+    display: flex;
+    margin-top: 9px;
+}
+
+.secondul{
+    display: flex;
+   
+ 
+}
+.secondli{
+    margin-right: 14%;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;    
+}
+.secondli:hover{
+    color: rgb(255, 166, 0);
+    text-decoration: underline;
+}
+header{
+    box-shadow: 1px 1px 1px  rgb(207, 206, 206);
+}
+.vlcbody{
+    margin: 5px;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contentart{
+    height: 50px;
+}
+.textcontent{
+    display: flex;
+}
+.alphabet{
+    margin-top: 5px;
+}
+p{
+    margin-left: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.textcontenticon{
+    height: 22px;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    border: solid 0.3px;
+    padding-top: 15px;
+    
+}
+.footerimages{
+    height:48px;
+}
+.items{
+    margin-top: 15px;
+    width: 100%;
+}
+.footertext{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 0;
+    padding-top: 0;
+}
+.footertext:hover{
+    color: rgb(255, 166, 0);
+    text-decoration: underline;
+}
+.fixedshuffleicon{
+    height: 70px;
+    width: 70px;
+    background-color: brown;
+    position: absolute;
+    right: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: rgb(255, 166, 0);
+    z-index: 1;
+    bottom: 40px;
+    right: 30px;
+    margin-right:600x ;
+
+}
+.shuffleicon{
+    height: 20px;
+}
+
